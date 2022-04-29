@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chatApp {
+    display: flex;
+    height: 100vh;
+}
+
+.leftSide {
+    flex: 1 ;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSide > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    flex-direction:column;
+    padding:20px 20px 10px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid lightgrey;
+}
+
+.search .search-check  {
+    position: relative;
+    top: -14px;
+    left: 30px;
+}
+
+.search-container {
+    margin: 3px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: lightgray;
+    width: 100%;
+    background-color: white;
+}
+
+.search-container input{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    width: calc(100% - 50px);
+    vertical-align: text-bottom;
+}
+
+.search-container img {
+    position: relative;
+    top: 3px;
+}
+
+.search-container button{
+    background: transparent;
+    border: none;
+    padding: 0px 8px 0px;
+}
+
+.chatTitle {
+    color:deepskyblue;
+    font-size: 30px;
+    padding:20px 20px 10px;
+}
+
+.chat {
+    margin: 0;
+    padding: 0px 0px 0px 20px;
+    overflow-y: scroll;
+    height: calc(100% - 210px);
+}
+
+.chat > div {
+    display: flex;
+    margin: 0;
+    padding: 15px 10px 0px 0px;
+    border-bottom: solid 1px lightgrey;
+}
+
+.chat .avatar {
+    border-radius: 50%;
+}
+
+.chat .img {
+    flex: 0;
+}
+
+.chat .img > .check{
+    position: relative;
+    top: -20%;
+    left: 60%;
+}
+
+.chat .message {
+    margin: 0;
+    padding: 10px 10px;
+    flex: 1;
+}
+
+.chat .message > h5 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.chat .message > .textMessage{
+    margin: 5px 0px 0px;
+    height: 31px;
+    overflow: hidden;
+}
+
+.chat .date{
+    min-width: 90px;
+}
+
+.rightSide {
+    flex: 2;
+}
+
+.sender {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: solid 1px lightgrey;
+    background-color: #F5F5F5;
+}
+
+.sender .avatar{
+    border-radius: 50%;
+}
+
+.sender .check {
+    position: relative;
+    top: 8%;
+    left: -24%;
+}
+
+.sender h3{
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.chatWindow {
+    background-color: #F5F5F5;
+    height: calc(100% - 137px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chatWindow .message {
+    padding: 10px;
+    align-items: flex-start;
+    display: flex;
+    max-width: 80%;
+}
+
+.message .avatar{
+    padding: 10px 0px;
+    border-radius: 50%;
+}
+
+.message > .profile > .textMessage{
+    background-color: #2A304C;
+    color: white;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.message > .profile {
+    flex-grow: 2;
+}
+
+.message > .profile > .date{
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.chatWindow .response{
+    padding: 10px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatWindow .response .textMessage{
+    max-width: 80%;
+}
+
+.chatWindow .textMessage{
+    background-color: #DDDDD9;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.chatWindow .date{
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.message > .profile > .date{
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.send-message-form{
+    background-color: #F5F5F5;
+    border-top: 1px solid lightgrey;
+    padding: 5px;
+}
+
+.message-container{
+    margin: 0px auto;
+    padding: 0px 20px;
+    border-radius: 50px;
+    border: 1px solid lightgrey;
+    width: 95%;
+    background-color: white;
+}
+
+.message-container input {
+    border: none;
+    font-size: 20px;
+    width: calc(100% - 50px);
+    outline: none;
+    vertical-align: super;
+}
+
+.message-container .message-button{
+    border: none;
+    padding: 15px 10px 10px;
+    background: transparent;
+}
